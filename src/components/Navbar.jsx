@@ -11,7 +11,7 @@ export default function Navbar() {
             <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#">Car</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#">Contac</a></li>
             </ul>
           </div>
         </div>
