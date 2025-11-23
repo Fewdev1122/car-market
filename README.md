@@ -9,10 +9,3 @@ npm install
 2. รันโปรเจกต์ (โหมดพัฒนา)
 npm start
 เปิดที่: http://localhost:3000
-
-3. สร้างไฟล์สำหรับ deploy (โหมดโปรดักชัน)
-npm run build
-
-เทคโนโลยีที่ใช้
-React
-Tailwind CSS
