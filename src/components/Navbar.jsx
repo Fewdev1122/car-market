@@ -13,6 +13,10 @@ export default function Navbar() {
               <li><a href="#">Car</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
+            <ul>
+              <li>Sign in</li>
+              <li>Sign up</li>
+            </ul>
           </div>
         </div>
       </div>
