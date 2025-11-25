@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Cars from './pages/Cars';
 import Contact from './pages/Contact';
+import Detail from './pages/detail-car';
 
 export default function App() {
   return (
@@ -11,6 +11,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/car" element={<Cars />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/detail/:id" element={<Detail />} />
       </Routes>
     </Router>
 

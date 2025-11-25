@@ -34,7 +34,7 @@ export default function Recommend() {
                   </div>
                   <p className="text-blue-500 ">฿{Cars.price}</p>
                   <div className="flex justify-center mt-8 w-full ">
-                    <NavLink className="w-full" to="">
+                    <NavLink className="w-full"  to={`/detail/${Cars.id}`} state={Cars}>
                       <button className="bg-[#3B82F6] text-white text-sm py-1 px-9 w-full rounded-lg xl:py-2 hover:bg-[#60A5FA]">ดูรายละเอียด</button>
                     </NavLink>
                   </div>
