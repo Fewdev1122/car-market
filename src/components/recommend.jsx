@@ -2,6 +2,7 @@ import React from "react";
 import Cars from "../data/cars.json";
 import { NavLink } from "react-router-dom";
 import IcDate from "./imgs/formkit--date.svg";
+import IcMileage from "./imgs/formkit--mileage.svg";
 
 
 export default function Recommend() {
@@ -26,11 +27,13 @@ export default function Recommend() {
                   <p className="text-[#fff] mb-2">{Cars.model}</p>
                   <div className="flex gap-3 text-sm text-gray-400 mb-2">
                     <div className="flex item-center gap-1">
-                      <img src={IcDate} alt="Loading" className="w-3.5 text-bold" />
+                      <img src={IcDate} alt="Loading" className="w-3.5 " />
                       <p >{Cars.year}</p>
                     </div>
-
-                    <p>{Cars.mileage} km</p>
+                    <div className="flex item-center gap-1">
+                      <img src={IcMileage} alt="Loading" className="w-4.5 " />
+                      <p>{Cars.mileage} km</p>
+                    </div>
                   </div>
                   <p className="text-blue-500 ">฿{Cars.price}</p>
                   <div className="flex justify-center mt-8 w-full ">
