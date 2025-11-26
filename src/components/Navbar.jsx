@@ -15,7 +15,7 @@ export default function Navbar() {
 
 
   return (
-    <nav className="bg-[#0F172A] text-[#fff] flex justify-center relative h-auto py-4 shadow-lg z-50 sticky top-0">
+    <nav className="bg-[#0F172A] text-[#fff] flex justify-center relative h-auto py-4  z-50 sticky top-0 shadow-[0_10px_20px_rgba(0,0,0,0.19)]">
       <div className="container mx-auto flex ">
         <div className="flex flex-col md:flex-row justify-between w-full items-center">
           <NavLink to="/" className="text-xl font-bold flex items-center">
