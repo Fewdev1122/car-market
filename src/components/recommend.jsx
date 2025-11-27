@@ -18,7 +18,7 @@ export default function Recommend() {
         <div >
           <div className="grid gap-1 grid-cols-[repeat(auto-fit,minmax(250px,1fr))] place-items-center">
             {Cars.slice(0, 4).map((Cars) => (
-              <div key={Cars.id} className="flex flex-col gap-2 bg-[#1E293B] rounded-xl w-[240px] border border-gray-700 xl:w-[300px] 2xl:w-[320px] cursor-pointer group transition-shadow duration-300 hover:  ">
+              <div key={Cars.id} className="flex flex-col gap-2 bg-[#1E293B] rounded-xl w-[240px] border border-gray-700 xl:w-[300px] 2xl:w-[320px] cursor-pointer group transition-shadow duration-300 hover:shadow-[0_10px_20px_rgba(37,99,235,0.19)]">
                 <div className="w-full aspect-[16/9] overflow-hidden rounded-t-xl">
                   <img src={Cars.image} alt={Cars.model} className="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105" />
                 </div>
