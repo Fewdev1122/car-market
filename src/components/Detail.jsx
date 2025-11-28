@@ -7,7 +7,7 @@ export default function Detail() {
   const detailCar = location.state
 
   return (
-    <div className="bg-[#0F172A] p-8 ">
+    <div className="bg-[#0F172A] p-8 pb-16 min-h-screen">
       <div className=" container mx-auto">
         <NavLink
           to="/"
@@ -17,11 +17,12 @@ export default function Detail() {
             <path
               fill="none"
               stroke="currentColor"
-              stroke-linecap="square"
-              stroke-width="2"
+              strokeLinecap="square"
+              strokeWidth="2"
               d="M11 6.5L5.5 12l5.5 5.5M6.75 12h13"
             />
           </svg>
+
           <p>กลับ</p>
         </NavLink>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -37,7 +38,7 @@ export default function Detail() {
             <img
               src={detailCar.image}
               alt="Loading"
-              className="w-[120px] h-[70px] md:w-[210px] md:h-[120px] rounded-md object-cover border-2 border-blue-600 cursor-pointer"
+              className="w-[170px] h-[100px] md:w-[210px] md:h-[120px] rounded-md object-cover border-2 border-blue-600 cursor-pointer"
             />
           </div>
           <div className="bg-[#1E293B] md:w-full rounded-xl p-8 border border-gray-700">
@@ -48,7 +49,7 @@ export default function Detail() {
 
             <div className="grid grid-cols-2 gap-4 mt-4 ">
               <div className="flex items-center gap-3">
-               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none"><path fill="#3B82F6" d="M2 9c0-1.886 0-2.828.586-3.414S4.114 5 6 5h12c1.886 0 2.828 0 3.414.586S22 7.114 22 9c0 .471 0 .707-.146.854C21.707 10 21.47 10 21 10H3c-.471 0-.707 0-.854-.146C2 9.707 2 9.47 2 9m0 9c0 1.886 0 2.828.586 3.414S4.114 22 6 22h12c1.886 0 2.828 0 3.414-.586S22 19.886 22 18v-5c0-.471 0-.707-.146-.854C21.707 12 21.47 12 21 12H3c-.471 0-.707 0-.854.146C2 12.293 2 12.53 2 13z"/><path stroke="#3B82F6" stroke-linecap="round" stroke-width="2" d="M7 3v3m10-3v3"/></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none"><path fill="#3B82F6" d="M2 9c0-1.886 0-2.828.586-3.414S4.114 5 6 5h12c1.886 0 2.828 0 3.414.586S22 7.114 22 9c0 .471 0 .707-.146.854C21.707 10 21.47 10 21 10H3c-.471 0-.707 0-.854-.146C2 9.707 2 9.47 2 9m0 9c0 1.886 0 2.828.586 3.414S4.114 22 6 22h12c1.886 0 2.828 0 3.414-.586S22 19.886 22 18v-5c0-.471 0-.707-.146-.854C21.707 12 21.47 12 21 12H3c-.471 0-.707 0-.854.146C2 12.293 2 12.53 2 13z" /><path stroke="#3B82F6" stroke-linecap="round" stroke-width="2" d="M7 3v3m10-3v3" /></g></svg>
                 <div>
                   <p className="text-gray-500 text-sm">ปี</p>
                   <p className="text-white">{detailCar.year}</p>

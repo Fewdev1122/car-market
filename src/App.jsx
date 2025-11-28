@@ -3,10 +3,12 @@ import Home from './pages/Home';
 import Cars from './pages/Cars';
 import Contact from './pages/Contact';
 import Detail from './pages/detail-car';
+import ScrollToTop from './components/ScrollToTop';
 
 export default function App() {
   return (
     <Router>
+      <ScrollToTop /> 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/car" element={<Cars />} />
