@@ -25,7 +25,7 @@ export default function Navbar() {
           ${!toggle ? 'hidden' : 'flex' } 
           flex-col 
           md:flex md:flex-row md:items-center
-          md:space-x-8 space-y-4 md:space-y-0 mt-4 md:mt-0`}>
+          md:space-x-8 space-y-4 md:space-y-0 mt-4  md:mt-0`}>
       
             <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-5">
               <NavLink to="/" className={linkClass} >Home</NavLink>
@@ -42,11 +42,11 @@ export default function Navbar() {
             <img src={HamMenu} alt="" onClick={updateToggle} className="h-8 w-8 cursor-pointer "/>
 
             {toggle && (
-            <div className="absolute right-0 mt-2 bg-[#0F172A] text-white flex flex-col space-y-3 p-4 rounded-lg shadow-lg z-50">
+            <div className="absolute right-0 mt-2 bg-[#0F172A] text-white flex flex-col space-y-3 p-4 rounded-lg shadow-lg z-50 ">
               <NavLink to="/" className={linkClass} onClick={() => setToggle(false)}>Home</NavLink>
               <NavLink to="/car" className={linkClass} onClick={() => setToggle(false)}>Car</NavLink>
               <NavLink to="/contact" className={linkClass} onClick={() => setToggle(false)}>Contact</NavLink>
-              <NavLink className="hover:text-blue-500" onClick={() => setToggle(false)}>Sign in</NavLink>
+              <NavLink className="hover:text-blue-500 " onClick={() => setToggle(false)}>Sign in</NavLink>
               <NavLink className="bg-blue-800 px-4 py-2 rounded-lg text-center hover:bg-blue-600 transition-colors duration-200" onClick={() => setToggle(false)}>Sign up</NavLink>
             </div>
           )}
