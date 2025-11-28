@@ -24,9 +24,9 @@ export default function Detail() {
           </svg>
           <p>กลับ</p>
         </NavLink>
-        <div className="flex flex-col md:flex-row gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="flex flex-col gap-3 w-full md:w-auto">
-            <div className="w-full md:w-[550px] lg:w-[650px] xl:w-[700px] aspect-video 
+            <div className="w-full  aspect-video 
                     bg-white rounded-xl overflow-hidden border border-gray-700">
               <img
                 src={detailCar.image}
@@ -37,10 +37,10 @@ export default function Detail() {
             <img
               src={detailCar.image}
               alt="Loading"
-              className="w-[120px] h-[70px] md:w-[150px] md:h-[90px] rounded-md object-cover border border-gray-700"
+              className="w-[120px] h-[70px] md:w-[210px] md:h-[120px] rounded-md object-cover border-2 border-blue-600 cursor-pointer"
             />
           </div>
-          <div className="bg-[#1E293B] md:w-[750px] rounded-xl p-8 border border-gray-700">
+          <div className="bg-[#1E293B] md:w-full rounded-xl p-8 border border-gray-700">
             <p className="bg-blue-900 w-[60px] text-sm px-2 text-center text-blue-400 rounded-lg mt-2">{detailCar.brand}</p>
             <p className="text-white mt-2">{detailCar.model}</p>
             <p className="text-blue-700 mt-2">฿{detailCar.price}</p>
