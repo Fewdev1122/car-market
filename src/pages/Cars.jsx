@@ -1,11 +1,12 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import  CartCar from "../components/cartCar";
 
-export default function Car() {
+export default function Cars() {
   return (
     <>
       <Navbar />
-      <div>หน้ารถยนต์</div>
+      <CartCar />
     </>
   )
   
