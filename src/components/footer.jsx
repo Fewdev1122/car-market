@@ -1,9 +1,9 @@
-
+import React from "react";
 
 export default function Footer() {
   return (
     <>
-      <footer className="bg-[#1E293B] text-white text-center p-4 h-[360px]">
+      <footer className="bg-[#1E293B] text-white text-center p-4 ">
         <p className="p-9">ทำไมต้องเลือก CarMarket?</p>
         <div className="grid gap-2 grid-cols-[repeat(auto-fit,minmax(250px,1fr))] py-7">
           <div className="flex flex-col items-center">

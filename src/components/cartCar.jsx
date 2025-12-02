@@ -2,12 +2,12 @@ import Cars from "../data/cars.json";
 import { NavLink } from "react-router-dom";
 import IcDate from "./imgs/formkit--date.svg";
 import IcMileage from "./imgs/formkit--mileage.svg";
-
+import React from "react";
 
 export default function CartCar() {
   
   return (
-    <div className=" bg-[#0F172A] ">
+    <div className=" bg-[#0F172A] pb-10">
       <div className="container mx-auto px-4 ">
         <div className="py-4">
           <p className="text-white text-xl">รถยนต์ทั้งหมด</p>
@@ -19,7 +19,7 @@ export default function CartCar() {
               <input type="search" name="search" id="" placeholder="ค้นหาชื่อรถหรือยี่ห้อ..." className="bg-[#0F172A] border border-gray-700 text-sm px-4 py-2 rounded-lg" />
             </div>
             <div className="flex flex-col">
-              <label htmlFor="">ยี่ห้อ</label>
+              <label htmlFor="categories-brand">ยี่ห้อ</label>
               <select name="categories-brand" id="" className="bg-[#0F172A] border border-gray-700 text-sm px-4 py-2 rounded-lg">
                 <option value="AllBrand">ทั้งหมด</option>
                 {[
@@ -72,8 +72,8 @@ export default function CartCar() {
           <div className="grid gap-4 grid-cols-[repeat(auto-fit,minmax(250px,1fr))]  place-items-center">
             {Cars.map((Cars) => (
               <div key={Cars.id} className="flex flex-col gap-2 bg-[#1E293B] rounded-xl w-full max-w-[320px] border border-gray-700  cursor-pointer group transition-shadow duration-300 hover:shadow-[0_10px_20px_rgba(37,99,235,0.19)]">
-                <div className="w-full aspect-[16/9] overflow-hidden rounded-t-xl">
-                  <img src={Cars.image} alt={Cars.model} className="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105" />
+                <div className="w-full aspect-[16/9] overflow-hidden rounded-t-xl bg-gray-700 ">
+                  <img src={Cars.image} alt={Cars.model} className="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105 text-center text-gray-400" />
                 </div>
                 <div className="p-4 pt-[1.75rem] ">
                   <p className="text-blue-400 text-sm mb-1">{Cars.brand}</p>
@@ -91,7 +91,7 @@ export default function CartCar() {
                   <p className="text-blue-500 ">฿{Cars.price}</p>
                   <div className="flex justify-center mt-8 w-full ">
                     <NavLink className="w-full" to={`/detail/${Cars.id}`} state={Cars}>
-                      <button className="bg-[#3B82F6] text-white text-sm py-1 px-9 w-full rounded-lg xl:py-2 hover:bg-[#60A5FA]">ดูรายละเอียด</button>
+                      <button className="bg-[#3B82F6] text-white text-sm py-2  px-9 w-full rounded-lg  hover:bg-[#60A5FA]">ดูรายละเอียด</button>
                     </NavLink>
                   </div>
                 </div>

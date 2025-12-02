@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React,{ useState } from "react";
 import { useLocation, NavLink } from "react-router-dom";
 
 
@@ -6,7 +6,7 @@ export default function Detail() {
   const location = useLocation();
   const detailCar = location.state
   const [isFavorite, setIsFavorite] = useState(false);
-  const iconFavorite = <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#dc2626" fill-opacity="0" d="M12 8c0 0 0 0 0.76 -1c0.88 -1.16 2.18 -2 3.74 -2c2.49 0 4.5 2.01 4.5 4.5c0 0.93 -0.28 1.79 -0.76 2.5c-0.81 1.21 -8.24 9 -8.24 9c0 0 -7.43 -7.79 -8.24 -9c-0.48 -0.71 -0.76 -1.57 -0.76 -2.5c0 -2.49 2.01 -4.5 4.5 -4.5c1.56 0 2.87 0.84 3.74 2c0.76 1 0.76 1 0.76 1Z"><animate fill="freeze" attributeName="fill-opacity" begin="0.7s" dur="0.5s" values="0;1"/></path><path fill="none" stroke="#dc2626" stroke-dasharray="32" stroke-dashoffset="32" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c0 0 0 0 -0.76 -1c-0.88 -1.16 -2.18 -2 -3.74 -2c-2.49 0 -4.5 2.01 -4.5 4.5c0 0.93 0.28 1.79 0.76 2.5c0.81 1.21 8.24 9 8.24 9M12 8c0 0 0 0 0.76 -1c0.88 -1.16 2.18 -2 3.74 -2c2.49 0 4.5 2.01 4.5 4.5c0 0.93 -0.28 1.79 -0.76 2.5c-0.81 1.21 -8.24 9 -8.24 9"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.7s" values="32;0"/></path></svg>
+  const iconFavorite = <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#dc2626" fillOpacity="0" d="M12 8c0 0 0 0 0.76 -1c0.88 -1.16 2.18 -2 3.74 -2c2.49 0 4.5 2.01 4.5 4.5c0 0.93 -0.28 1.79 -0.76 2.5c-0.81 1.21 -8.24 9 -8.24 9c0 0 -7.43 -7.79 -8.24 -9c-0.48 -0.71 -0.76 -1.57 -0.76 -2.5c0 -2.49 2.01 -4.5 4.5 -4.5c1.56 0 2.87 0.84 3.74 2c0.76 1 0.76 1 0.76 1Z"><animate fill="freeze" attributeName="fill-opacity" begin="0.7s" dur="0.5s" values="0;1"/></path><path fill="none" stroke="#dc2626" strokeDasharray="32" strokeDashoffset="32" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c0 0 0 0 -0.76 -1c-0.88 -1.16 -2.18 -2 -3.74 -2c-2.49 0 -4.5 2.01 -4.5 4.5c0 0.93 0.28 1.79 0.76 2.5c0.81 1.21 8.24 9 8.24 9M12 8c0 0 0 0 0.76 -1c0.88 -1.16 2.18 -2 3.74 -2c2.49 0 4.5 2.01 4.5 4.5c0 0.93 -0.28 1.79 -0.76 2.5c-0.81 1.21 -8.24 9 -8.24 9"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.7s" values="32;0"/></path></svg>
   
   function toggleFavorite() {
     setIsFavorite(!isFavorite);
@@ -64,7 +64,7 @@ export default function Detail() {
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#3B82F6" d="M10.758 15.192q.465.466 1.194.424q.729-.041 1.064-.524l5.253-7.323l-7.361 5.216q-.502.334-.559 1.038t.409 1.17M12 5q1.379 0 2.51.336q1.132.335 2.256 1.025l-.92.623q-.883-.482-1.828-.733T12 6Q8.675 6 6.337 8.338T4 14q0 1.05.288 2.075T5.1 18h13.8q.575-.95.838-1.975T20 13.9q0-.9-.232-1.894t-.734-1.852l.624-.92q.73 1.252 1.033 2.356T21 13.888q.006 1.29-.287 2.408q-.292 1.118-.91 2.254q-.12.2-.365.325T18.9 19H5.1q-.275 0-.51-.134q-.234-.135-.394-.393q-.496-.875-.846-1.974T3 14q0-1.844.7-3.481q.699-1.637 1.909-2.867T8.471 5.71T12 5m.04 6.96" stroke-width="0.5" stroke="#3B82F6" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#3B82F6" d="M10.758 15.192q.465.466 1.194.424q.729-.041 1.064-.524l5.253-7.323l-7.361 5.216q-.502.334-.559 1.038t.409 1.17M12 5q1.379 0 2.51.336q1.132.335 2.256 1.025l-.92.623q-.883-.482-1.828-.733T12 6Q8.675 6 6.337 8.338T4 14q0 1.05.288 2.075T5.1 18h13.8q.575-.95.838-1.975T20 13.9q0-.9-.232-1.894t-.734-1.852l.624-.92q.73 1.252 1.033 2.356T21 13.888q.006 1.29-.287 2.408q-.292 1.118-.91 2.254q-.12.2-.365.325T18.9 19H5.1q-.275 0-.51-.134q-.234-.135-.394-.393q-.496-.875-.846-1.974T3 14q0-1.844.7-3.481q.699-1.637 1.909-2.867T8.471 5.71T12 5m.04 6.96" strokeWidth="0.5" stroke="#3B82F6" /></svg>
                 <div>
                   <p className="text-gray-500 text-sm">เลขไมล์</p>
                   <p className="text-white">{detailCar.mileage} km</p>
@@ -89,8 +89,8 @@ export default function Detail() {
               <p className="text-white mt-10 mb-4">รายละเอียด</p>
               <p className="text-gray-500">{detailCar.Detail}</p>
             </div>
-            <div className="flex gap-4 mt-8 w-full">
-              <button className={`${!isFavorite ? "text-black" : "text-red-600"} group bg-white py-2 px-4 w-full rounded-lg cursor-pointer flex justify-center gap-4  
+            <div className="md:flex gap-2  md:gap-4 mt-7 w-full">
+              <button className={`${!isFavorite ? "text-black" : "text-red-600"} group bg-white py-1 px-2  md:items-center w-full rounded-lg cursor-pointer flex justify-center gap-1  
                  hover:outline-red-600 hover:outline hover:bg-[#1E293B] hover:text-red-600 transition-colors duration-200`} onClick={toggleFavorite}>
                 {!isFavorite? <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +107,7 @@ export default function Detail() {
                 {!isFavorite? "เพิ่มในรายการโปรด"  : "ลบออกจากรายการโปรด"}
               </button>
 
-              <button className="bg-blue-500 w-full rounded-lg px-4 text-white cursor-pointer hover:bg-blue-400 transition-colors duration-200">ซื้อเลย</button>
+              <button className="bg-blue-500 w-full rounded-lg py-1 px-2 md:py-2 md:px-4 text-white cursor-pointer hover:bg-blue-400 transition-colors duration-200 mt-2 md:m-0">ซื้อเลย</button>
             </div>
             
           </div>

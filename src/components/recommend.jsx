@@ -18,7 +18,7 @@ export default function Recommend() {
         <div >
           <div className="grid gap-1 grid-cols-[repeat(auto-fit,minmax(250px,1fr))] place-items-center">
             {Cars.slice(0, 4).map((Cars) => (
-              <div key={Cars.id} className="flex flex-col gap-2 bg-[#1E293B] rounded-xl w-[240px] border border-gray-700 xl:w-[300px] 2xl:w-[320px] cursor-pointer group transition-shadow duration-300 hover:shadow-[0_10px_20px_rgba(37,99,235,0.19)]">
+              <div key={Cars.id} className="flex flex-col gap-2 bg-[#1E293B] rounded-xl max-w-[320px] border border-gray-700 xl:w-[300px] 2xl:w-[320px] cursor-pointer group transition-shadow duration-300 hover:shadow-[0_10px_20px_rgba(37,99,235,0.19)] mb-4">
                 <div className="w-full aspect-[16/9] overflow-hidden rounded-t-xl">
                   <img src={Cars.image} alt={Cars.model} className="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105" />
                 </div>
@@ -38,7 +38,7 @@ export default function Recommend() {
                   <p className="text-blue-500 ">฿{Cars.price}</p>
                   <div className="flex justify-center mt-8 w-full ">
                     <NavLink className="w-full"  to={`/detail/${Cars.id}`} state={Cars}>
-                      <button className="bg-[#3B82F6] text-white text-sm py-1 px-9 w-full rounded-lg xl:py-2 hover:bg-[#60A5FA]">ดูรายละเอียด</button>
+                      <button className="bg-[#3B82F6] text-white text-sm py-2 px-9 w-full rounded-lg xl:py-2 hover:bg-[#60A5FA]">ดูรายละเอียด</button>
                     </NavLink>
                   </div>
                 </div>

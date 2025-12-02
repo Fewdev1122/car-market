@@ -27,15 +27,15 @@ export default function Navbar() {
           md:flex md:flex-row md:items-center
           md:space-x-8 space-y-4 md:space-y-0 mt-4  md:mt-0`}>
       
-            <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-5">
+            <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-8">
               <NavLink to="/" className={linkClass} >Home</NavLink>
               <NavLink to="/car" className={linkClass} >Car</NavLink>
               <NavLink to="/contact" className={linkClass} >Contact</NavLink>
             </div>
         
-            <div className=" flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-5 md:items-center ">
+            <div className=" flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-5 md:items-center md:justify-end">
               <NavLink className="hover:text-blue-500 cursor-pointer transition-colors duration-200">Sign in</NavLink>
-              <NavLink className="hover:text-blue-500 cursor-pointer transition-colors duration-200 w-[90px] py-2  rounded-lg ">Sign up</NavLink>
+              <NavLink className="hover:text-blue-500 cursor-pointer transition-colors duration-200  py-2  rounded-lg ">Sign up</NavLink>
             </div>
           </div>
           <div className="md:hidden absolute right-4">
