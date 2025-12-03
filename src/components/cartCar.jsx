@@ -7,7 +7,7 @@ import React from "react";
 export default function CartCar() {
   
   return (
-    <div className=" bg-[#0F172A] pb-10">
+    <div className=" bg-[#0F172A] pb-10 min-h-screen">
       <div className="container mx-auto px-4 ">
         <div className="py-4">
           <p className="text-white text-xl">รถยนต์ทั้งหมด</p>
@@ -16,7 +16,7 @@ export default function CartCar() {
           <div className="text-white flex flex-wrap md:justify-between gap-4 w-full flex-col md:flex-row">
             <div className="flex flex-col wd:w-[400px]">
               <label htmlFor="search">ค้นหา</label>
-              <input type="search" name="search" id="" placeholder="ค้นหาชื่อรถหรือยี่ห้อ..." className="bg-[#0F172A] border border-gray-700 text-sm px-4 py-2 rounded-lg" />
+              <input type="search" name="search" id="" placeholder="ค้นหาชื่อรถหรือยี่ห้อ..." className="bg-[#0F172A] border border-gray-700 text-sm px-4 py-2 rounded-lg lg:w-[400px]" />
             </div>
             <div className="flex flex-col">
               <label htmlFor="categories-brand">ยี่ห้อ</label>
@@ -55,7 +55,7 @@ export default function CartCar() {
             <div className="flex flex-col">
               <label htmlFor="price">ราคา</label>
               <select name="price" id="" className="bg-[#0F172A] border border-gray-700 text-sm px-4 py-2 rounded-lg">
-                <option value="AllPrice">ทั้งหมด</option>
+                <option  value="AllPrice">ทั้งหมด</option>
                 <option value="&lt; 1,000,000">ต่ำกว่า 1 ล้าน</option>
                 <option value="1,000,000-2,000,000">1-2 ล้าน</option>
                 <option value="2,000,000-3,000,000">2-3 ล้าน</option>
