@@ -8,4 +8,4 @@ npm install
 
 2. รันโปรเจกต์ (โหมดพัฒนา)
 npm start
-เปิดที่: http://localhost:3000
+เปิดที่: http://localhost:3000   
