@@ -8,7 +8,7 @@ export default function Navbar() {
   const updateToggle = () => {
     setToggle(!toggle);
   }
-  const linkClass = ({ isActive }) => 
+  const linkClass = ({ isActive }) =>      
     isActive
       ? "text-blue-500 "
       : "text-white hover:text-blue-400 transition-colors duration-200";
