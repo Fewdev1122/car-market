@@ -5,26 +5,26 @@ function Form() {
     <>
       <div className='bg-[#0F172A] py-12'>
         <div className='container mx-auto grid grid-flow-row md:grid-flow-col gap-9'>
-          <div className='bg-[#1E293B] p-6 rounded-lg border-2 border-gray-700'>
+          <div className='bg-[#1E293B] p-6 rounded-lg border border-gray-700'>
             <form action="POST" className='space-y-4'>
               <span className='text-white '>ส่งข้อความถึงเรา</span>
-              <div className='flex flex-col text-white'>
+              <div className='flex flex-col text-white space-y-2'>
                 <label htmlFor="name">ชื่อ-นามสกุล</label>
-                <input type="text" name='name' />
+                <input type="text" name='name' placeholder='กรอกชื่อของคุณ' className='focus:border-blue-500 transition-colors duration-200 outline-none pl-3 text-sm h-10 bg-[#0F172A] border border-gray-700 rounded-lg'/>
               </div>
-              <div className='flex flex-col text-white'>
+              <div className='flex flex-col text-white space-y-2'>
                 <label htmlFor="email">อีเมล</label>
-                <input type="email" name="email" id="" />
+                <input type="email" name="email" id="" placeholder='your.eamil@example.com' className='focus:border-blue-500 transition-colors duration-200 outline-none pl-3 text-sm h-10 bg-[#0F172A] border border-gray-700 rounded-lg'/>
               </div>
-              <div className='flex flex-col text-white'>
+              <div className='flex flex-col text-white space-y-2'>
                 <label htmlFor="tel">เบอร์โทรศัพท์</label>
-                <input type="tel" name="tel" id="" />
+                <input type="tel" name="tel" id="" placeholder='0xx-xxx-xxxx' className='focus:border-blue-500 transition-colors duration-200 outline-none pl-3 text-sm h-10 bg-[#0F172A] border border-gray-700 rounded-lg'/>
               </div>
-              <div className='flex flex-col text-white'>
+              <div className='flex flex-col text-white space-y-2'>
                 <label htmlFor="text">ข้อความ</label>
-                <input type="text" name="text" id="" />
+               <textarea name="text" id="" placeholder='บอกเราเกี่ยวกับความต้องการของคุณ...' className='focus:border-blue-500 transition-colors duration-200 outline-none resize-none p-3 text-sm bg-[#0F172A] border border-gray-700 rounded-lg'></textarea>
               </div>
-              <button type='summit'>ส่งข้อความ</button>
+              <button type='summit' className='bg-blue-600 w-full text-white py-2 text-sm rounded-lg hover:bg-blue-500 transition-colors duration-200'>ส่งข้อความ</button>
             </form>
           </div>
           <div>
