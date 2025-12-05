@@ -5,7 +5,7 @@ import IcMileage from "./imgs/formkit--mileage.svg";
 import React from "react";
 
 export default function CartCar() {
-  
+
   return (
     <div className=" bg-[#0F172A] pb-10 min-h-screen">
       <div className="container mx-auto px-4 ">
@@ -13,14 +13,14 @@ export default function CartCar() {
           <p className="text-white text-xl">รถยนต์ทั้งหมด</p>
         </div>
         <form id="myForm" className="bg-[#1E293B] border border-gray-700 p-4 rounded-lg mb-8">
-          <div className="text-white flex flex-wrap md:justify-between gap-4 w-full flex-col md:flex-row">
+          <div className="text-white flex flex-wrap justify-between  w-full gap-4 flex-col lg:gap-0 md:flex-row">
             <div className="flex flex-col wd:w-[400px]">
               <label htmlFor="search">ค้นหา</label>
-              <input type="search" name="search" id="" placeholder="ค้นหาชื่อรถหรือยี่ห้อ..." className="bg-[#0F172A] border border-gray-700 text-sm px-4 py-2 rounded-lg lg:w-[400px]" />
+              <input type="search" name="search" id="" placeholder="ค้นหาชื่อรถหรือยี่ห้อ..." className="focus:border-blue-500 transition-colors duration-200 outline-none bg-[#0F172A] border border-gray-700 text-sm px-4 py-2 rounded-lg lg:w-[400px]" />
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col relative lg:w-[190px]">
               <label htmlFor="categories-brand">ยี่ห้อ</label>
-              <select name="categories-brand" id="" className="bg-[#0F172A] border border-gray-700 text-sm px-4 py-2 rounded-lg">
+              <select name="categories-brand" id="" className="bg-[#0F172A] w-full border border-gray-700 text-sm px-4 pr-7 py-2  rounded-lg focus:border-blue-500 transition-colors duration-200 outline-none appearance-none">
                 <option value="AllBrand">ทั้งหมด</option>
                 {[
                   ...new Set(Cars.map(car => car.brand))
@@ -28,10 +28,13 @@ export default function CartCar() {
                   <option key={index} value={brand}>{brand}</option>
                 ))}
               </select>
+              <div className="absolute right-3 top-11 pointer-events-none -translate-y-1/2 ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 1024 1024"><path fill="#fff" d="M831.872 340.864L512 652.672L192.128 340.864a30.59 30.59 0 0 0-42.752 0a29.12 29.12 0 0 0 0 41.6L489.664 714.24a32 32 0 0 0 44.672 0l340.288-331.712a29.12 29.12 0 0 0 0-41.728a30.59 30.59 0 0 0-42.752 0z" strokeWidth="25.5" stroke="#fff" /></svg>
+              </div>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col relative lg:w-[190px]">
               <label htmlFor="Type">ประเภท</label>
-              <select name="Type" id="" className="bg-[#0F172A] border border-gray-700 text-sm px-4 py-2 rounded-lg">
+              <select name="Type" id="" className="bg-[#0F172A] border border-gray-700 text-sm px-4 pr-8 py-2 rounded-lg focus:border-blue-500 transition-colors duration-200 outline-none appearance-none">
                 <option value="AllType" >ทั้งหมด</option>
                 {[
                   ...new Set(Cars.map(car => car.Type))
@@ -39,10 +42,13 @@ export default function CartCar() {
                   <option value={type} key={index}>{type}</option>
                 ))}
               </select>
+              <div className="absolute right-3 top-11 pointer-events-none -translate-y-1/2 ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 1024 1024"><path fill="#fff" d="M831.872 340.864L512 652.672L192.128 340.864a30.59 30.59 0 0 0-42.752 0a29.12 29.12 0 0 0 0 41.6L489.664 714.24a32 32 0 0 0 44.672 0l340.288-331.712a29.12 29.12 0 0 0 0-41.728a30.59 30.59 0 0 0-42.752 0z" strokeWidth="25.5" stroke="#fff" /></svg>
+              </div>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col relative lg:w-[190px]">
               <label htmlFor="year">ปี</label>
-              <select name="year" id="" className="bg-[#0F172A] border border-gray-700 text-sm px-4 py-2 rounded-lg">
+              <select name="year" id="" className="bg-[#0F172A] border border-gray-700 text-sm px-4 pr-7 py-2 rounded-lg focus:border-blue-500 transition-colors duration-200 outline-none appearance-none">
                 <option value="AllType">ทั้งหมด</option>
                 {[
                   ...new Set(Cars.map(car => car.year))
@@ -51,16 +57,22 @@ export default function CartCar() {
                     <option value={year} key={index}>{year}</option>
                   ))}
               </select>
+              <div className="absolute right-3 top-11 pointer-events-none -translate-y-1/2 ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 1024 1024"><path fill="#fff" d="M831.872 340.864L512 652.672L192.128 340.864a30.59 30.59 0 0 0-42.752 0a29.12 29.12 0 0 0 0 41.6L489.664 714.24a32 32 0 0 0 44.672 0l340.288-331.712a29.12 29.12 0 0 0 0-41.728a30.59 30.59 0 0 0-42.752 0z" strokeWidth="25.5" stroke="#fff" /></svg>
+              </div>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col relative lg:w-[190px]">
               <label htmlFor="price">ราคา</label>
-              <select name="price" id="" className="bg-[#0F172A] border border-gray-700 text-sm px-4 py-2 rounded-lg">
-                <option  value="AllPrice">ทั้งหมด</option>
+              <select name="price" id="" className="bg-[#0F172A] border border-gray-700 text-sm px-4 py-2  rounded-lg focus:border-blue-500 transition-colors duration-200 outline-none  appearance-none">
+                <option value="AllPrice">ทั้งหมด</option>
                 <option value="&lt; 1,000,000">ต่ำกว่า 1 ล้าน</option>
                 <option value="1,000,000-2,000,000">1-2 ล้าน</option>
                 <option value="2,000,000-3,000,000">2-3 ล้าน</option>
                 <option value="&gt; 3,000,000">มากกว่า 3 ล้าน</option>
               </select>
+              <div className="absolute right-3 top-11 pointer-events-none -translate-y-1/2 ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 1024 1024"><path fill="#fff" d="M831.872 340.864L512 652.672L192.128 340.864a30.59 30.59 0 0 0-42.752 0a29.12 29.12 0 0 0 0 41.6L489.664 714.24a32 32 0 0 0 44.672 0l340.288-331.712a29.12 29.12 0 0 0 0-41.728a30.59 30.59 0 0 0-42.752 0z" strokeWidth="25.5" stroke="#fff" /></svg>
+              </div>
             </div>
           </div>
           <div className="flex justify-between mt-4 items-center">
